@@ -12,11 +12,11 @@ public class UserDAO {
 	
 	public UserDAO() {
 		try {
-			String dbuRL = "jdbc:mysql://localhost:3306/bbs";
+			String dbURL = "jdbc:mysql://localhost:3306/bbs";
 			String dbID = "root";
 			String dbPassword = "mirim2";
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(dbuRL, dbID, dbPassword);
+			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
